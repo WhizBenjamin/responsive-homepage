@@ -99,7 +99,6 @@ nav ul {
 }
 
 nav ul li a {
-  font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 16px;
   color: #ffffff;
@@ -116,6 +115,7 @@ nav ul li a {
   justify-content: space-between;
   padding-top: 60px;
   position: relative;
+  color: #fff;
 }
 
 .hero-section .left h1 {
@@ -123,16 +123,13 @@ nav ul li a {
   font-weight: 900;
   font-size: 50px;
   line-height: 125%;
-  color: #ffffff;
   margin-bottom: 0;
 }
 
 .hero-section .left p {
-  font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 200%;
-  color: #ffffff;
   margin-bottom: 30px;
   width: 457px;
 }
@@ -155,6 +152,7 @@ nav ul li a {
 .achievement-card {
   position: absolute;
   min-width: 190px;
+  color: var(--dark-blue-color);
 }
 
 .achievement-card .content {
@@ -182,22 +180,26 @@ nav ul li a {
 }
 
 .achievement-card h3 {
-  font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 36px;
-  color: var(--dark-blue-color);
   margin: 0;
   text-align: center;
   width: 100%;
+  flex: 1;
+}
+
+.achievement-card img {
+  flex: 1;
+  height: 42px;
+  margin-left: -22px;
 }
 
 .achievement-card p {
-  font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-size: 16px;
-  color: var(--dark-blue-color);
   margin-top: -0.5px;
   margin-bottom: 0.5px;
+  text-align: center;
 }
 
 .achievement-card .bg {
@@ -231,7 +233,6 @@ h2.light {
 }
 
 section p {
-  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 200%;
@@ -441,7 +442,6 @@ section p {
 }
 
 .app-section .app-btn span {
-  font-family: "Poppins", sans-serif;
   font-weight: normal;
   font-size: 20px;
   color: #ffffff;
@@ -499,7 +499,7 @@ footer form input {
   font-size: 16px;
   line-height: 200%;
   border-radius: 8px;
-  padding: 8px 32px;
+  padding: 8px 160px 8px 32px;
   border: none;
   width: 100%;
   color: #000000;
@@ -839,6 +839,10 @@ nav.mobile-nav,
     grid-template-columns: 1fr;
     text-align: center;
     gap: 40px;
+  }
+
+  footer form input {
+    padding: 8px 32px;
   }
 
   footer .links-container .links:last-child {
